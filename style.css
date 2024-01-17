@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://wallpapers.com/images/hd/no-man-s-sky-4k-gaming-9cw5c1q7y6z57mgy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-wrap{
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+}
+
+.gif{
+    transition: width 1s ease-in-out;
+}
+
+.line{
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .container-wrap { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
